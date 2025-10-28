@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Color Scheme Generator | by Illona Addae</title>
+    <meta name="author" content="Illona Addae (@OceanicCoder)" />
+    <meta
+      name="description"
+      content="A sophisticated color scheme generator built by Illona Addae"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <main class="page-bg">
+      <div class="app-card">
+        <header class="card-header">
+          <div class="controls">
+            <label class="control-item" for="seed-color">
+              <span class="label">Seed color</span>
+              <input
+                id="seed-color"
+                type="color"
+                value="#FF5733"
+                aria-label="Choose seed color"
+              />
+            </label>
+
+            <label class="control-item" for="scheme-mode">
+              <span class="label">Mode</span>
+              <select id="scheme-mode" aria-label="Choose color scheme mode">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+              </select>
+            </label>
+
+            <button id="get-scheme" class="btn">Get color scheme</button>
+          </div>
+        </header>
+
+        <section class="preview-mock">
+          <div class="palette" id="palette" aria-live="polite">
+            <!-- JS will populate five .swatch elements. We include placeholders so CSS shows layout. -->
+            <div class="swatch" data-index="0">
+              <div class="color-box" style="background: #ff5a5a"></div>
+              <button class="hex">#FF5A5A</button>
+            </div>
+            <div class="swatch" data-index="1">
+              <div class="color-box" style="background: #2b283a"></div>
+              <button class="hex">#2B283A</button>
+            </div>
+            <div class="swatch" data-index="2">
+              <div class="color-box" style="background: #fbf3ab"></div>
+              <button class="hex">#FBF3AB</button>
+            </div>
+            <div class="swatch" data-index="3">
+              <div class="color-box" style="background: #aad1b6"></div>
+              <button class="hex">#AAD1B6</button>
+            </div>
+            <div class="swatch" data-index="4">
+              <div class="color-box" style="background: #a626d3"></div>
+              <button class="hex">#A626D3</button>
+            </div>
+          </div>
+        </section>
+
+        <footer class="card-footer">
+          <p class="note">
+            Click any hex code to copy to clipboard. Built by
+            <a
+              href="[Your Portfolio URL]"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Illona Addae</a
+            >
+            (@OceanicCoder)
+          </p>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>

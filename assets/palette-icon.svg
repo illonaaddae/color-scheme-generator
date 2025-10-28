@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="titleDesc">
+  <title id="titleDesc">Color Palette Icon</title>
+  <desc>Soft pastel color palette icon used for the project README</desc>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#FDECF7"/>
+      <stop offset="100%" stop-color="#F0E8FB"/>
+    </linearGradient>
+  </defs>
+  <rect rx="16" ry="16" width="120" height="120" fill="url(#g)"/>
+  <!-- palette base -->
+  <path d="M24 70c0-17 17-30 36-30 6 0 11 2 15 5 3 2 6 1 9-1 5-3 13-5 17 2 5 9-3 22-14 25-9 2-27 3-43-1-13-3-20-7-20-5z" fill="#fff" opacity="0.6"/>
+  <!-- pastel circles -->
+  <circle cx="40" cy="58" r="7" fill="#FF9AA2"/>
+  <circle cx="60" cy="52" r="7" fill="#FFB7B2"/>
+  <circle cx="78" cy="58" r="7" fill="#F7EAC8"/>
+  <circle cx="54" cy="70" r="7" fill="#C6E9D1"/>
+  <circle cx="82" cy="70" r="7" fill="#C4B1F7"/>
+  <!-- subtle sparkle -->
+  <path d="M92 28l2.6 5.6L101 36l-6.4 2.4L92 46l-2.6-7.6L83 36l7.6-2.4z" fill="#FFE3F0" opacity="0.9"/>
+</svg>
