@@ -1,7 +1,6 @@
 # 🎨 Color Scheme Generator
 
-![Color Scheme Generator Preview](/assets/the-color-scheme-generator.netlify.app_(Readme).png)
-
+![Color Scheme Generator Preview](</assets/the-color-scheme-generator.netlify.app_(Readme).png>)
 
 A sophisticated color scheme generator built with modern web technologies.
 
@@ -35,13 +34,21 @@ A sophisticated color scheme generator built with modern web technologies.
 ### Color Engine 🎨
 
 ```javascript
-async function getColorScheme(color, mode) {
-  const baseColor = color.replace("#", "");
-  const response = await fetch(
-    `https://www.thecolorapi.com/scheme?hex=${baseColor}&mode=${mode}`
-  );
-  const data = await response.json();
-  return data.colors.map((color) => color.hex.value);
+function getColorScheme() {
+  const hexColor = colorInput.value.slice(1);
+  const mode = selectDropDown.value;
+
+  fetch(
+    `https://www.thecolorapi.com/scheme?hex=${hexColor}&mode=${mode}&count=5`
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      const colors = data.colors;
+      // Update the color swatches
+      colors.forEach((color, index) => {
+        // ... color updates
+      });
+    });
 }
 ```
 
@@ -51,8 +58,12 @@ async function getColorScheme(color, mode) {
 function copyToClipboard(text) {
   navigator.clipboard
     .writeText(text)
-    .then(() => showCopyFeedback())
-    .catch((err) => console.error("Failed to copy:", err));
+    .then(() => {
+      console.log("Copied to clipboard:", text);
+    })
+    .catch((err) => {
+      console.error("Failed to copy:", err);
+    });
 }
 ```
 
