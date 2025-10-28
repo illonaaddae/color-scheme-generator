@@ -1,13 +1,7 @@
 # 🎨 Color Scheme Generator
 
-![Color Scheme Generator Preview](screenshot.png)
+![Color Scheme Generator Preview](/assets/the-color-scheme-generator.netlify.app_(Readme).png)
 
-> 💡 **Note:** To add your screenshot:
->
-> 1. Take a screenshot of your live site
-> 2. Name it `screenshot.png`
-> 3. Place it in the root directory
-> 4. Delete this note
 
 A sophisticated color scheme generator built with modern web technologies.
 
@@ -18,7 +12,7 @@ A sophisticated color scheme generator built with modern web technologies.
 
 ## Demo 🚀
 
-[Try the Color Scheme Generator](your-live-site-url) - Create beautiful color palettes in seconds!
+[Try the Color Scheme Generator](https://the-color-scheme-generator.netlify.app/) - Create beautiful color palettes in seconds!
 
 ## Features 🌈
 
@@ -98,9 +92,9 @@ Created by Illona
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue.svg)][linkedin]
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-black.svg)][github]
 
-[portfolio]: your-portfolio-link
-[linkedin]: your-linkedin
-[github]: https://github.com/YOUR-USERNAME
+[portfolio]: https://oceaniccodes.netlify.app/
+[linkedin]: https://www.linkedin.com/in/illonaaddae
+[github]: https://github.com/illonaaddae
 
 ---
 
